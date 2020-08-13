@@ -35,8 +35,7 @@
     }
   ],
   "bin": {
-    "sumcore-node": "./bin/sumcore-node",
-    "sumcoind": "./bin/sumcoind"
+    "sumcore-node": "./bin/sumcore-node"
   },
   "scripts": {
     "preinstall": "./scripts/download",
