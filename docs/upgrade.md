@@ -8,7 +8,7 @@ This major upgrade includes changes to indexes, API methods and services. Please
 
 ### Indexes
 
-Indexes include *more information* and are now also *faster*. Because of this a **reindex will be necessary** when upgrading as the address and database indexes are now a part of bitcoind with three new `bitcoin.conf` options:
+Indexes include *more information* and are now also *faster*. Because of this a **reindex will be necessary** when upgrading as the address and database indexes are now a part of bitcoind with three new `sumcoin.conf` options:
 - `-addressindex`
 - `-timestampindex`
 - `-spentindex`
@@ -17,7 +17,7 @@ To start reindexing add `reindex=1` during the **first startup only**.
 
 ### Configuration Options
 
-- The `bitcoin.conf` file in will need to be updated to include additional indexes *(see below)*.
+- The `sumcoin.conf` file in will need to be updated to include additional indexes *(see below)*.
 - The `datadir` option is now a part of `bitcoind` spawn configuration, and there is a new option to connect to multiple bitcoind processes (Please see [Bitcoin Service Docs](services/bitcoind.md) for more details). The services `db` and `address` are now a part of the `bitcoind` service. Here is how to update `sumcore-node.json` configuration options:
 
 **Before**:
@@ -55,7 +55,7 @@ To start reindexing add `reindex=1` during the **first startup only**.
 }
 ```
 
-It will also be necessary to update `bitcoin.conf` settings, to include these fields:
+It will also be necessary to update `sumcoin.conf` settings, to include these fields:
 ```
 server=1
 whitelist=127.0.0.1
