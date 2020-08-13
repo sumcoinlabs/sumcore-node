@@ -9,7 +9,7 @@ var log = index.log;
 log.debug = function() {};
 
 var chai = require('chai');
-var bitcore = require('litecore-lib');
+var bitcore = require('sumcore-lib');
 var rimraf = require('rimraf');
 var node;
 
@@ -53,7 +53,7 @@ describe('Node Functionality', function() {
             config: {
               spawn: {
                 datadir: datadir,
-                exec: path.resolve(__dirname, '../bin/litecoind')
+                exec: path.resolve(__dirname, '../bin/sumcoind')
               }
             }
           }
