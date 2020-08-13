@@ -82,7 +82,7 @@ verify_download() {
     fi
 }
 
-download=1
+download=0
 verify=0
 
 if [ "${SKIP_BITCOIN_DOWNLOAD}" = 1 ]; then
