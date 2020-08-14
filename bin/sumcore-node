@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var sumcore = require('../lib/cli/bitcore');
+sumcore();

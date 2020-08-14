@@ -9,7 +9,7 @@ console.log('Bitcoin Service native interface vs. Bitcoin JSON RPC interface');
 console.log('----------------------------------------------------------------------');
 
 // To run the benchmarks a fully synced Bitcore Core directory is needed. The RPC comands
-// can be modified to match the settings in bitcoin.conf.
+// can be modified to match the settings in sumcoin.conf.
 
 var fixtureData = {
   blockHashes: [
@@ -28,7 +28,7 @@ var fixtureData = {
 
 var bitcoind = require('../').services.Bitcoin({
   node: {
-    datadir: process.env.HOME + '/.litecoin',
+    datadir: process.env.HOME + '/.sumcoin',
     network: {
       name: 'testnet'
     }
