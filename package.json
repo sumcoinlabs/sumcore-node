@@ -1,8 +1,8 @@
 {
   "name": "sumcore-node",
-  "description": "Full node with extended capabilities using Litecore and Litecoin Core",
+  "description": "Full node with extended capabilities using Sumcore and Sumcoin Core",
   "author": "BitPay <dev@bitpay.com>",
-  "version": "3.1.14",
+  "version": "3.1.15",
   "main": "./index.js",
   "repository": "git://https://github.com/sumcoinlabs/sumcore-node.git",
   "homepage": "https://https://github.com/sumcoinlabs/sumcore-node",
@@ -45,6 +45,11 @@
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "tags": [
+    "sumcoin",
+    "sumcoind",
+    "node"
+  ],
+  "kewords": [
     "sumcoin",
     "sumcoind",
     "node"
